@@ -20,7 +20,7 @@ const Form = () => {
         process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
         currentForm,
-        process.env.NEXT_PUBLIC_EMAIL_USER_ID as string
+        "p_Buk6Ty3a0IxRCuj"
       );
       setSuccessMessage("¡Su solicitud ha sido enviada!");
     } catch (error) {
