@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const Form = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -17,10 +17,10 @@ const Form = () => {
 
     try {
       await emailjs.sendForm(
-        NEXT_PUBLIC_EMAIL_SERVICE_ID,
-        NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
         currentForm,
-        NEXT_PUBLIC_EMAIL_USER_ID
+        process.env.NEXT_PUBLIC_EMAIL_USER_ID as string
       );
       setSuccessMessage("¡Su solicitud ha sido enviada!");
     } catch (error) {

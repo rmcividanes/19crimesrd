@@ -16,9 +16,11 @@ export default function Home() {
 
   useEffect(() => {
     const mediaWatcher = window.matchMedia("(max-width:45rem)");
+    console.log("Initial narrow screen state:", mediaWatcher.matches);
     setIsNarrowScreen(mediaWatcher.matches);
 
     function updateIsNarrowScreen(e: MediaQueryListEvent) {
+      console.log("Screen width changed:", e.matches);
       setIsNarrowScreen(e.matches);
     }
 
