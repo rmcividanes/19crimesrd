@@ -10,10 +10,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   env: {
-    NEXT_PUBLIC_AWS_ACCESS_KEY_ID: process.env.AWS_ACCESS_KEY_ID,
-    NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY,
-    NEXT_PUBLIC_AWS_REGION: process.env.AWS_REGION,
-    NEXT_PUBLIC_S3_BUCKET_NAME: process.env.S3_BUCKET_NAME,
+    NEXT_PUBLIC_EMAIL_SERVICE_ID: process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
+    NEXT_PUBLIC_EMAIL_TEMPLATE_ID: process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
+    NEXT_PUBLIC_EMAIL_USER_ID: process.env.NEXT_PUBLIC_EMAIL_USER_ID,
   },
   webpack(config) {
     // Ensure Webpack can resolve paths
