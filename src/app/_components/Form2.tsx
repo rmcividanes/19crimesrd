@@ -36,41 +36,41 @@ const Form = () => {
       <form
         onSubmit={sendEmail}
         ref={form}
-        className="bg-black mx-10 my-2 p-4"
+        className="bg-black mx-4 my-2 p-4"
         encType="multipart/form-data"
       >
-        <div className="p-2">
+        <div className="p-1">
           <Label htmlFor="from_name" className="text-white">
             Nombres <span className="text-red-700">(Obligatorio)</span>
           </Label>
           <Input type="text" required id="from_name" name="from_name" />
         </div>
-        <div className="p-2">
+        <div className="p-1">
           <Label htmlFor="from_lastname" className="text-white">
             Apellidos <span className="text-red-700">(Obligatorio)</span>
           </Label>
           <Input type="text" required id="from_lastname" name="from_lastname" />
         </div>
 
-        <div className="p-2">
+        <div className="p-1">
           <Label htmlFor="from_email" className="text-white">
             Email <span className="text-red-700">(Obligatorio)</span>
           </Label>
           <Input type="email" required id="from_email" name="from_email" />
         </div>
-        <div className="p-2">
+        <div className="p-1">
           <Label htmlFor="from_tel" className="text-white">
             Teléfono <span className="text-red-700">(Obligatorio)</span>
           </Label>
           <Input type="tel" required id="from_tel" name="from_tel" />
         </div>
-        <div className="p-2">
+        <div className="p-1">
           <Label htmlFor="from_id" className="text-white">
             Cédula <span className="text-red-700">(Obligatorio)</span>
           </Label>
           <Input type="text" required id="from_id" name="from_id" />
         </div>
-        <div className="p-2">
+        <div className="p-1">
           <Label htmlFor="my_file" className="text-white">
             Sube la factura aquí{" "}
             <span className="text-red-700">(Obligatorio)</span>
@@ -83,7 +83,7 @@ const Form = () => {
             className="text-black"
           />
         </div>
-        <div className="p-2">
+        <div className="px-1 py-2">
           <Button type="submit" className="bg-red-700 w-full">
             Enviar
           </Button>
