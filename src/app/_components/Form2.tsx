@@ -80,7 +80,7 @@ const Form = () => {
             required
             id="my_file"
             name="my_file"
-            className="text-black"
+            className="file:text-black"
           />
         </div>
         <div className="px-1 py-2">
