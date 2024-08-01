@@ -50,7 +50,7 @@ export default function Home() {
               </div>
               <div>
                 <div>
-                  <Image src={Titulo} alt="title" className="w-full pt-14" />
+                  <Image src={Titulo} alt="title" className="w-full pt-10" />
                 </div>
                 <div className="py-4 flex justify-center">
                   <div>

@@ -10,10 +10,10 @@ function Navbar() {
     <nav className="bg-black text-white flex px-4">
       <div className="flex">
         {" "}
-        <div className="p-4 w-1/3 focus-visible">
+        <div className="p-4 w-1/4 focus-visible">
           <Link href="/">SUBE TU FACTURA</Link>
         </div>
-        <div className="p-4 w-1/3 ">
+        <div className="p-4 w-1/4 ">
           {" "}
           <Link
             href="Bases-Legales.pdf"
@@ -25,9 +25,9 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="flex w-2/3 py-4">
+      <div className="flex w-2/3 py-4 justify-between">
         {" "}
-        <div className="px-4">
+        <div className="">
           {" "}
           <Link
             href="https://www.facebook.com/share/UZnEf9pPe89kzia7/?mibextid=LQQJ4d"
