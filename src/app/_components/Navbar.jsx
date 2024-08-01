@@ -32,7 +32,7 @@ function Navbar() {
         </div>
       </div>
       <div className="flex py-2">
-        <div className="px-3">
+        <div className="px-1">
           {" "}
           <Link
             href="https://www.facebook.com/share/UZnEf9pPe89kzia7/?mibextid=LQQJ4d"
@@ -41,7 +41,7 @@ function Navbar() {
             <Image src={Facebook} alt="facebook-link" className="w-10" />
           </Link>
         </div>
-        <div className="px-3">
+        <div className="">
           {" "}
           <Link
             href="https://www.instagram.com/19crimesrd?igsh=aTZvc3YxdjdkbjVr"
