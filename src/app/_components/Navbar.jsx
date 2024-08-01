@@ -7,13 +7,13 @@ import Instagram from "../images/Instagram-icon.png";
 
 function Navbar() {
   return (
-    <nav className="bg-black text-white flex justify-between px-4">
+    <nav className="bg-black text-white flex px-4">
       <div className="flex">
         {" "}
-        <div className="p-4 w-2/3 hover:bg-secondary hover:text-secondary-foreground focus-visible:bg-secondary focus-visible">
+        <div className="p-4 w-1/3 focus-visible">
           <Link href="/">SUBE TU FACTURA</Link>
         </div>
-        <div className="p-4 w-2/3 hover:bg-secondary hover:text-secondary-foreground focus-visible:bg-secondary focus-visible">
+        <div className="p-4 w-1/3 ">
           {" "}
           <Link
             href="Bases-Legales.pdf"
@@ -25,9 +25,9 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="flex w-1/3 py-4 justify-between">
+      <div className="flex w-2/3 py-4">
         {" "}
-        <div className="">
+        <div className="px-4">
           {" "}
           <Link
             href="https://www.facebook.com/share/UZnEf9pPe89kzia7/?mibextid=LQQJ4d"

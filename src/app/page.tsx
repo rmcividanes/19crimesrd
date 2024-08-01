@@ -9,7 +9,7 @@ import Form from "@/app/_components/Form";
 import Form2 from "@/app/_components/Form2";
 import { useEffect, useState } from "react";
 import Navbar from "./_components/Navbar";
-import back from "./images/Fondo-Mobil.jpg";
+import back from "./images/back-mobile.jpeg";
 
 export default function Home() {
   const [isNarrowScreen, setIsNarrowScreen] = useState(false);
@@ -50,7 +50,7 @@ export default function Home() {
               </div>
               <div>
                 <div>
-                  <Image src={Titulo} alt="title" className="w-full pt-20" />
+                  <Image src={Titulo} alt="title" className="w-full pt-14" />
                 </div>
                 <div className="py-4 flex justify-center">
                   <div>

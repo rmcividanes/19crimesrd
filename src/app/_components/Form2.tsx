@@ -24,9 +24,9 @@ const Form = () => {
       );
       setSuccessMessage("¡Su solicitud ha sido enviada!");
     } catch (error) {
-      console.error("Failed to send email:", error);
+      console.error("No se pudo enviar el correo electrónico:", error);
       setSuccessMessage(
-        "There was an error submitting the form. Please try again."
+        "Hubo un error al enviar el formulario. Inténtalo nuevamente."
       );
     }
   };
@@ -75,7 +75,13 @@ const Form = () => {
             Sube la factura aquí{" "}
             <span className="text-red-700">(Obligatorio)</span>
           </Label>
-          <Input type="file" required id="my_file" name="my_file" />
+          <Input
+            type="file"
+            required
+            id="my_file"
+            name="my_file"
+            className="text-black"
+          />
         </div>
         <div className="p-4">
           <Button type="submit" className="bg-red-700 w-full">
